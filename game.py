@@ -576,6 +576,8 @@ class MahjongGame:
         suit_start = suit * 9 + 1
 
         for pos in range(3):
+            if pos > tile_in_suit:
+                continue
             seq_start = tile_in_suit - pos
             if 0 <= seq_start <= 6:
                 sequence = [suit_start + seq_start + i for i in range(3)]

@@ -1,5 +1,8 @@
 Singapore_Mahjong_Rules.pdf
 winning_hands.txt
+benchmark.py
+checkpoints*/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

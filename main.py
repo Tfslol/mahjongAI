@@ -1,7 +1,7 @@
 """Main entry point for Singapore Mahjong game."""
 
 from controller import GameController
-from player import HumanPlayer, MCTSPlayer
+from player import HumanPlayer, MCTSPlayer, Player
 
 
 def main():
@@ -21,6 +21,7 @@ def main():
         except ValueError:
             print("Invalid input!")
 
+    players: list[Player]
     # Create players based on choice
     if choice == 1:
         # All humans
